@@ -11,6 +11,7 @@
 		C4ACFA9226BF30D00087D959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ACFA9126BF30D00087D959 /* ContentView.swift */; };
 		C4ACFA9426BF30D10087D959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ACFA9326BF30D10087D959 /* Assets.xcassets */; };
 		C4ACFA9726BF30D10087D959 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4ACFA9626BF30D10087D959 /* Preview Assets.xcassets */; };
+		C4ACFAA126BF30E50087D959 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4ACFAA026BF30E50087D959 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		C4ACFA9326BF30D10087D959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4ACFA9626BF30D10087D959 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4ACFA9826BF30D10087D959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4ACFA9E26BF30E50087D959 /* BlogPostProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlogPostProject.entitlements; sourceTree = "<group>"; };
+		C4ACFAA026BF30E50087D959 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4ACFAA126BF30E50087D959 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +42,7 @@
 			children = (
 				C4ACFA8E26BF30D00087D959 /* BlogPostProject */,
 				C4ACFA8D26BF30D00087D959 /* Products */,
+				C4ACFA9F26BF30E50087D959 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +57,7 @@
 		C4ACFA8E26BF30D00087D959 /* BlogPostProject */ = {
 			isa = PBXGroup;
 			children = (
+				C4ACFA9E26BF30E50087D959 /* BlogPostProject.entitlements */,
 				C4ACFA8F26BF30D00087D959 /* BlogPostProjectApp.swift */,
 				C4ACFA9126BF30D00087D959 /* ContentView.swift */,
 				C4ACFA9326BF30D10087D959 /* Assets.xcassets */,
@@ -67,6 +73,14 @@
 				C4ACFA9626BF30D10087D959 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4ACFA9F26BF30E50087D959 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4ACFAA026BF30E50087D959 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlogPostProject/BlogPostProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BlogPostProject/Preview Content\"";
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
@@ -289,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlogPostProject/BlogPostProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"BlogPostProject/Preview Content\"";
 				DEVELOPMENT_TEAM = G7DSPSWXXC;
